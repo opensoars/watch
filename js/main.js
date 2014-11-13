@@ -1,11 +1,13 @@
-// DOM elements
-var start_btn = document.getElementById('start'),
-    stop_btn = document.getElementById('stop'),
-    secs_span = document.getElementById('secs'),
-    mins_span = document.getElementById('mins'),
-    reset_btn = document.getElementById('reset');
-
+// Were using an immediately invoked anonymous function to
+// make sure none of our variables are accessible from the console 
 (function (){
+
+  // DOM elements
+  var start_btn = document.getElementById('start'),
+      stop_btn = document.getElementById('stop'),
+      secs_span = document.getElementById('secs'),
+      mins_span = document.getElementById('mins'),
+      reset_btn = document.getElementById('reset');
 
   // Counters
   var secs = 0,

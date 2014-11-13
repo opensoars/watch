@@ -23,7 +23,7 @@
   function loop(){
     secs += 1;
 
-    if(secs >= 59){
+    if(secs >= 60){
       // Reset our secs to 0
       secs = 0;
 

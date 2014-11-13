@@ -23,9 +23,11 @@
     secs += 1;
 
     if(secs >= 59){
+      // Reset our secs to 0
       secs = 0;
-      mins += 1;
 
+      mins += 1;
+      
       // Draw our mins only when we have incremented it
       mins_span.innerHTML = mins;
     }

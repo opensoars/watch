@@ -59,7 +59,7 @@
 
   // Stops our stopwatch
   function stop(){
-    
+
     // Clear the interval so it won't loop anymore
     clearInterval(interval);
 
@@ -95,7 +95,14 @@
   }
 
 
-  // Add event listeners to buttons
+  /**
+   * Add event listeners to buttons
+   *
+   * Note we do not type: `start_btn.onclick = start();` !
+   * That would result in calling the start function, when
+   * we just want to add it as an event listener. So it can
+   * get called when the event is actualy fired.
+   */
   start_btn.onclick = start;
   pause_btn.onclick = pause;
   stop_btn.onclick  = stop;

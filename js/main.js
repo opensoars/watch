@@ -88,22 +88,10 @@
   }
 
 
-  // Add events to DOM
-
-  start_btn.onclick = function (){
-    start();
-  };
-
-  pause_btn.onclick = function (){
-    pause();
-  };
-
-  stop_btn.onclick = function (){
-    stop();
-  };
-
-  reset_btn.onclick = function (){
-    reset();
-  };
+  // Add event listeners to buttons
+  start_btn.onclick = start;
+  pause_btn.onclick = pause;
+  stop_btn.onclick  = stop;
+  reset_btn.onclick = reset;
 
 }());

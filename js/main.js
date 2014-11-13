@@ -27,7 +27,7 @@
       secs = 0;
 
       mins += 1;
-      
+
       // Draw our mins only when we have incremented it
       mins_span.innerHTML = mins;
     }
@@ -53,20 +53,9 @@
     clearInterval(interval);
   }
 
-
-  // Add events to DOM
-
-  start_btn.onclick = function (){
-    start();
-  };
-
-  stop_btn.onclick = function (){
-    stop();
-  };
-
-  reset_btn.onclick = function (){
-
-    // Make it visual that a reset has procced
+  // Resets the stopwatch
+  function reset(){
+    // Make it visual that reset has been procced
     secs_span.innerHTML = 0;
     mins_span.innerHTML = 0;
 
@@ -79,6 +68,21 @@
 
     // And let's start over
     start();
+  }
+
+
+  // Add events to DOM
+
+  start_btn.onclick = function (){
+    start();
+  };
+
+  stop_btn.onclick = function (){
+    stop();
+  };
+
+  reset_btn.onclick = function (){
+    reset();
   };
 
 }());

@@ -4,6 +4,7 @@
 
   // DOM elements
   var start_btn = document.getElementById('start'),
+      pause_btn = document.getElementById('pause'),
       stop_btn = document.getElementById('stop'),
       reset_btn = document.getElementById('reset'),
       secs_span = document.getElementById('secs'),
@@ -42,6 +43,13 @@
   function start(){
     console.log('Starting stopwatch');
     interval = setInterval(loop, 1000);
+  }
+
+
+  // Makes the stopwatch pause
+  function pause(){
+    console.log('Pausing stopwatch');
+    clearInterval(interval);
   }
 
 
@@ -84,6 +92,10 @@
 
   start_btn.onclick = function (){
     start();
+  };
+
+  pause_btn.onclick = function (){
+    pause();
   };
 
   stop_btn.onclick = function (){

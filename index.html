@@ -6,10 +6,12 @@
 </head>
 <body>
 
+
   <header>
     <h1>Watch</h1>
     <p>Super simple demonstration</p>
   </header>
+
 
   <section>
     <button id='start'>Start</button>
@@ -17,13 +19,21 @@
     <button id='reset'>Reset</button>
   </section>
 
+
   <br>
-  
+
+
   <section>
     Secs: <span id='secs'>0</span><br>
     Mins: <span id='mins'>0</span><br>
   </section>
-  
+
+
+  <!-- 
+    Load our JS after the DOM is initialized.
+    This makes sure our script can find the DOM
+    elements
+  -->
   <script src='js/main.js'></script>
 
 </body>

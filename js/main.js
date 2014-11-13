@@ -53,6 +53,12 @@
 
     // Clear the interval so it won't loop anymore
     clearInterval(interval);
+
+    secs_span.innerHTML = 0;
+    mins_span.innerHTML = 0;
+
+    secs = 0;
+    mins = 0;
   }
 
 

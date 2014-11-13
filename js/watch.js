@@ -21,7 +21,8 @@
       mins = 0;
 
 
-  // Will hold the interval id so we can clear it on stop
+  // Will hold the interval id so we can clear it when stop
+  // is called
   var interval;
 
 

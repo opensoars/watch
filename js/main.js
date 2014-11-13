@@ -38,7 +38,7 @@
   }
 
 
-  // Starts our stopwatch
+  // Starts looping the loop function
   function start(){
     console.log('Starting stopwatch');
     interval = setInterval(loop, 1000);

@@ -5,9 +5,9 @@
   // DOM elements
   var start_btn = document.getElementById('start'),
       stop_btn = document.getElementById('stop'),
+      reset_btn = document.getElementById('reset'),
       secs_span = document.getElementById('secs'),
-      mins_span = document.getElementById('mins'),
-      reset_btn = document.getElementById('reset');
+      mins_span = document.getElementById('mins');
 
   // Counters
   var secs = 0,
@@ -25,9 +25,12 @@
     if(secs >= 59){
       secs = 0;
       mins += 1;
+
+      // Draw our mins only when we have incremented it
       mins_span.innerHTML = mins;
     }
 
+    // Draw our secs every time the loop is called
     secs_span.innerHTML = secs;
   }
 

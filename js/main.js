@@ -9,6 +9,7 @@
       secs_span = document.getElementById('secs'),
       mins_span = document.getElementById('mins');
 
+
   // Counters
   var secs = 0,
       mins = 0;
@@ -43,6 +44,7 @@
     interval = setInterval(loop, 1000);
   }
 
+
   // Stops our stopwatch
   function stop(){
     // Log about the stop event
@@ -52,6 +54,7 @@
     // Clear the interval so it won't loop anymore
     clearInterval(interval);
   }
+
 
   // Resets the stopwatch
   function reset(){

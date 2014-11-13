@@ -72,6 +72,8 @@
 
   // Resets the stopwatch
   function reset(){
+    console.log('Resetting stopwatch');
+    
     // Make it visual that reset has been procced
     secs_span.innerHTML = 0;
     mins_span.innerHTML = 0;

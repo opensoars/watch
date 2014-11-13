@@ -1,4 +1,4 @@
-// Were using an immediately invoked anonymous function to
+// We're using an immediately invoked anonymous function to
 // make sure none of our variables are accessible from the console 
 (function (){
 

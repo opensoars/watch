@@ -30,9 +30,7 @@
     secs += 1;
 
     if(secs >= 60){
-      // Reset our secs to 0
       secs = 0;
-
       mins += 1;
 
       // Draw our mins only when we have incremented it

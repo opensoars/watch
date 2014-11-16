@@ -1,7 +1,7 @@
 watch
 =====
 
-Simple stopwatch
+Simple stopwatch written with simplicity in mind. Making sure its logic is clear to JS beginners. Ofcourse it could be made a lot more accurate when using a pause for example. But that is not the purpose of this demonstration.
 
 ---
 

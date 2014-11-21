@@ -15,15 +15,16 @@
       secs_span = document.getElementById('secs'),
       mins_span = document.getElementById('mins');
 
-
   // Counters
   var secs = 0,
       mins = 0;
 
-
   // Will hold the interval id so we can clear it when stop
   // is called
   var interval;
+
+  // Whether our watch is running or not
+  var is_running = false;
 
 
   // Main loop that increments the count
@@ -45,6 +46,9 @@
 
   // Starts looping the loop function
   function start(){
+    if(is_running) return false;
+    
+    is_running = true;
     console.log('Starting stopwatch');
     interval = setInterval(loop, 1000);
   }
@@ -52,6 +56,8 @@
 
   // Makes the stopwatch pause
   function pause(){
+    is_running = false;
+
     console.log('Pausing stopwatch');
     clearInterval(interval);
   }
@@ -59,6 +65,8 @@
 
   // Stops our stopwatch
   function stop(){
+
+    is_running = false;
 
     // Clear the interval so it won't loop anymore
     clearInterval(interval);
